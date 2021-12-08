@@ -8,15 +8,21 @@ public class FinishLine : MonoBehaviour
     [SerializeField] float finishDelayTime = 1f;
     [SerializeField] ParticleSystem finishEffect;
 
+ 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            finishEffect.Play();
+            PlayEffectAndAudio();
             Invoke("loadScene", finishDelayTime);
         }
     }
 
+    private void PlayEffectAndAudio()
+    {
+        finishEffect.Play();
+        GetComponent<AudioSource>().Play();
+    }
 
     private void loadScene()
     {

@@ -7,15 +7,14 @@ public class CrashDetector : MonoBehaviour
 {
     [SerializeField] float crashDelayTime = 1f;
     [SerializeField] ParticleSystem crashEffect;
+    [SerializeField] AudioClip[] crashAudio;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
        if(collision.tag == "Ground")
-        {
+        {   
             
-                crashEffect.Play();
-            
-            
+            crashEffect.Play();       
             Invoke("loadScene",crashDelayTime);
         }
     }

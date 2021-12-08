@@ -1,29 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CrashDetector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DustTrail.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="8" Column="1" />
-      <File FileName="Assets/Scripts/FinishLine.cs" Line="15" Column="33" />
-      <File FileName="Assets/Scripts/CrashDetector.cs" Line="9" Column="49" />
+      <File FileName="Assets/Scripts/FinishLine.cs" Line="11" Column="2" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="54" Column="2" />
+      <File FileName="Assets/Scripts/CrashDetector.cs" Line="20" Column="1" />
+      <File FileName="Assets/Scripts/DustTrail.cs" Line="4" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Snowskate Master 2000" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="CrashDetector.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Snowskate Master 2000" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cc84e6be-b346-41c9-9f03-8484feb5cf98" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ac875417-f833-418f-86ce-37a80f93c35c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
