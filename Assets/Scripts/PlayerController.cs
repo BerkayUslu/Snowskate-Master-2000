@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     SurfaceEffector2D surfaceEffector;
     Rigidbody2D rigidBody;
+    bool isControllerLockOn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +22,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Boosts the player speed by changing the surface effector speed
-        SpeedBooster();
-        //rotates the character
-        RotatePlayer();
-
+        if (!isControllerLockOn)
+        {
+            //Boosts the player speed by changing the surface effector speed
+            SpeedBooster();
+            //rotates the character
+            RotatePlayer();
+        }
     }
 
     private void SpeedBooster()
@@ -51,4 +54,10 @@ public class PlayerController : MonoBehaviour
             rigidBody.AddTorque(-torqueAmount);
         }
     }
+    public void LockTheController()
+    {
+        isControllerLockOn = true;
+    }
 }
+
+
